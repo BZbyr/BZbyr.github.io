@@ -13,9 +13,9 @@ future: true
 
 # SNS settings
 RSS: true
-weibo_username:     BZbyr
+weibo_username:     bby966
 #zhihu_username:     
-github_username:    huxpro
+github_username:    BZbyr
 #twitter_username:   huxpro
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
@@ -59,7 +59,7 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: Boyang
+disqus_username: boyangboyang
 
 # Netease settings
 netease_comment: false
