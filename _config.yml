@@ -1,6 +1,6 @@
 # Site settings
-title: Breakfast Blog
-SEOTitle: 早餐 | Breakfast Blog
+title: BZbyr
+SEOTitle: 早餐 | BZbyr's Blog
 header-img: img/home-bg.jpg
 email: buptbzbyr@gmail.com
 description: "开卷有益"
@@ -106,22 +106,11 @@ friends: [
         title: "Kai",
         href: "https://alextk2012.github.io/"
     }
+    {
+        title: "Everstar",
+        href: "https://everstar.xyz/"
+    }
 ]
 
 # copyright 复制文章添加版权申明
-post_copyright: false
-
-# 主页 tags 云朵效果
-tags_cloud: true
-
-# 页面点击爱心效果
-click_love: true
-
-# 页面点击烟火效果
-click_fireworks: true
-
-# 页面背景粒子效果
-bg_nest: true
-
-# totop按钮
-rocket: true
+post_copyright: true
