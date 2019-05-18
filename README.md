@@ -1,3 +1,3 @@
-issue 就是 Blog
+评论区在 issue
 
 [test](post/test.md)
