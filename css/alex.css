@@ -1,0 +1,39 @@
+/* SVG 图 */
+#path_1 {
+    stroke-width: 4;
+    stroke: white;
+    stroke-dashoffset: 7% 7%;
+    stroke-dasharray: 0 35%;
+    -moz-animation: animation 3s ease infinite forwards;
+    -o-animation: animation 3s ease infinite forwards;
+    -webkit-animation: animation 3s ease infinite forwards;
+}
+
+@-webkit-keyframes animation {
+    100% {
+        stroke-dasharray: 7% 7%;
+        stroke-dashoffset: 7%;
+    }
+}
+
+#path_2 {
+    stroke-width: 4;
+    stroke: white;
+    stroke-dashoffset: 7% 7%;
+    stroke-dasharray: 0 35%;
+    -moz-animation: animation 3s ease infinite forwards;
+    -o-animation: animation 3s ease infinite forwards;
+    -webkit-animation: animation2 3s ease infinite forwards;
+}
+
+@-webkit-keyframes animation2 {
+    100% {
+        stroke-dasharray: 7% 7%;
+        stroke-dashoffset: 14%;
+    }
+}
+
+/* 修复表格上边框不显示 #259 实际修改了bootstrap.min.css 对应内容 */
+.table>thead:first-child>tr:first-child>td {
+    border-top: 1px solid #eee;
+}

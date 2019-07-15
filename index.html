@@ -1,0 +1,75 @@
+---
+layout: page
+description: "开卷有益"
+header-img: "img/home-bg.jpg"
+---
+
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {% if post.lang == 'en' %}
+                {{ post.content | strip_html | truncate:300 }}
+            {% else %}
+                {{ post.content | strip_html | truncate:200 }}
+            {% endif %}
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+</div>
+<hr>
+{% endfor %}
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
+
+
+{% if site.click_love %}
+<!-- 增加点击💗 -->
+<script type="text/javascript" src="/js/love.js"></script>
+{% endif %}
+
+
+{% if site.click_fireworks %}
+<!-- 增加点击烟花效果 -->
+<!-- <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+<script type="text/javascript" src="/js/fireworks.js"></script> -->
+{% endif %}
+
+
+{% if site.bg_nest %}
+<!-- 增加背景canvas-nest效果 -->   
+<script type="text/javascript" color="167,198,202" opacity='0.5' zIndex="-2" count="99" src="/js/canvas-nest.min.js"></script>
+{% endif %}
+
+
+{% if site.rocket %}
+<!-- 增加 totop 按钮 -->
+<link rel="stylesheet" href="/css/rocket.css">
+<a id="rocket" href="#top" class=""></a>
+<script type="text/javascript" src="/js/totop.js" async=""></script>
+{% endif %}
