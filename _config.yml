@@ -1,7 +1,7 @@
 # Site settings
-title: BZ
-SEOTitle: BZ Blog
-header-img: img/home-bg.jpg
+title: Boyang
+SEOTitle: Boyang Blog
+header-img: img/page-bg.jpg
 email: zbykid#outlook.com
 description: "开卷有益"
 keyword: ""
@@ -80,7 +80,7 @@ ga_domain: auto
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "开卷有益"
-sidebar-avatar: /img/profile/dog.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/profile/me.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
