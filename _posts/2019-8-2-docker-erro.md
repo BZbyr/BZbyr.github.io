@@ -1,6 +1,6 @@
 ---
 layout:     post                            # 使用的布局（不需要改,js里有根据布局做判断）
-title:      "Docker "exec format erro""           # 标题
+title:      "Docker 'exec format erro'"           # 标题
 subtitle:   " "  # 副标题
 date:       2019-08-02 12:00:00             # 时间
 author:     "BZbyr"                          # 作者
