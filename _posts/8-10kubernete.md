@@ -23,3 +23,5 @@ deployment 有非常关键的一点 Monitors the state of each pod, updating as 
 Pods可能被killed, 并且也不能依赖这些Pods的IP地址, 因为这些IP地址不是持久的。这时候我们需要Service Object.
 
 Service object (that is like a grouping object and gives it a so-called virtual IP (cluster IP) for the pods that have a certain label - and those pods are basically the app containers that you deployed with the former deployment object).
+
+日程使用中我们一般不用Pod，而是使用Deployment和Service来部署。
